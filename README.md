@@ -1,1 +1,1 @@
-# java-task-and-challenges
+#my-coding-journey
