@@ -1,5 +1,5 @@
 package MyCodingJourney.Java.Day_1;
-//arithmetic operators in Java
+// operators in Java.
 public class Operators {
     public static void main(String[] args) {
         int a = 10;
