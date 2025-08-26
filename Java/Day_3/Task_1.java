@@ -1,7 +1,7 @@
 package MyCodingJourney.Java.Day_3;
-    import java.util.Scanner;
-public class Task_1 {
-
+   import java.util.Scanner;
+public class Task_2 {
+ 
 
 
     public static void main(String[] args) {
@@ -13,12 +13,6 @@ public class Task_1 {
         for (int i = 0; i < numbers.length; i++) {
             System.out.print("Enter number " + (i+1) + ": ");
             numbers[i] = in.nextInt();
-        }
-
-        // Output
-        System.out.println("\nYou entered:");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println("numbers[" + i + "] = " + numbers[i]);
         }
 
         // Initialize sum, largest, smallest
@@ -39,12 +33,15 @@ public class Task_1 {
             }
         }
 
+        // Average (sum / number of elements)
+        double average = (double) sum / numbers.length;
+
         // Display results
         System.out.println("\nSum of all numbers = " + sum);
         System.out.println("Largest number = " + largest);
         System.out.println("Smallest number = " + smallest);
+        System.out.println("Average = " + average);
 
         in.close();
     }
 }
-
