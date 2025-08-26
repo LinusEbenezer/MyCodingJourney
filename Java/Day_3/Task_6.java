@@ -67,11 +67,11 @@ public class Task_5 {
 package MyCodingJourney.Java.Day_3;
 import java.util.Scanner;
 
-public class Task_5 {
+public class Task_6 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter number of students: ");
-        int students = in.nextInt();
+        
+        int students = 5;
 
 int[][] marks = inputMarks(in,students);   
 int highestTotal = 0, topStudent = -1;
@@ -102,7 +102,7 @@ for (int i = 0; i < students; i++){      // Method to input marks
     }
     // Input marks
     static int[][] inputMarks(Scanner in, int students ) {
-        int[][] marks = new int[students][3];
+        int[][] marks = new int[students][4];
         for (int i = 0; i < marks.length; i++) {
             for (int j=0; j< marks[i].length;j++){
             System.out.print("Enter mark"+(j+1)+ "for Student " + (i+1) + ": ");
