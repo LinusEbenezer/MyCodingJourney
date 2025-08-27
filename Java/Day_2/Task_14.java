@@ -1,5 +1,4 @@
 package MyCodingJourney.Java.Day_2;
-
 public class Task_14 {
    public static void main(String[] args) {
    int n=1385757879;
@@ -14,5 +13,3 @@ public class Task_14 {
       System.out.println(count);
    }
 }
-
-
