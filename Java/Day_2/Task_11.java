@@ -11,6 +11,7 @@ public class Task_11 {
         int b = in.nextInt();
         System.out.print("Enter the value 3: ");
         int c = in.nextInt();
+
         
         // Q: find the largest number
        // int max = a;
@@ -21,6 +22,7 @@ public class Task_11 {
           //  max = c;
         //}
         System.out.println("The Max value is: " + Math.max(Math.max(a,b),c));
+        in.close();
     }
 }
 
