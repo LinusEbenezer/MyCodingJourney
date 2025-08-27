@@ -1,7 +1,5 @@
 package MyCodingJourney.Java.Day_2;
-
 import java.util.Scanner;
-
 public class Task_18 {
       public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
