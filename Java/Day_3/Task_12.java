@@ -1,6 +1,6 @@
-package MyCodingJourney.Java.Day_2;
+package MyCodingJourney.Java.Day_3;
 
-public class Task_19 {
+public class Task_12 {
     public static void main(String[] args) {
         printMegaBytesAndKiloBytes(2500);
     }
