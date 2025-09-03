@@ -7,12 +7,12 @@ public static void main(String[] args) {
 public static void printDayOfWeek(int day){
 String DayOfWeek=switch (day) {
     case 0 -> {yield "Sunday";}
-    case 1 ->{yield "Monday";}
-    case 2 -> {yield"Tuesday";}
-    case 3 -> {yield "Wednesday";}
-    case 4 -> {yield "Thursday";}
-    case 5 -> {yield "Friday";}
-    case 6 -> {yield "Saturday";}
+    case 1 ->"Monday";
+    case 2 -> "Tuesday";
+    case 3 -> "Wednesday";
+    case 4 -> "Thursday";
+    case 5 -> "Friday";
+    case 6 -> "Saturday";
     default -> "Invalid Day";
 };
 System.out.println(day+ " stand for " + DayOfWeek);
