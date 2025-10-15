@@ -1,21 +1,25 @@
 package MyCodingJourney.Projects;
+
 import java.util.Scanner;
+
 public class Calculator {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String operator; // store the operator
-        System.out.println("=== Welcome to the Smart Calculator ===");
-        System.out.println("Type 'exit' to quit anytime.\n");
+        System.out.println("=== Smart Pro Calculator ===");
+        System.out.println("Type 'exit' anytime to quit.\n");
 
         while (true) {
-            System.out.print("Enter first number: ");
-            int num1 = in.nextInt();
+            System.out.println("Choose an operation:");
+            System.out.println(" +  → Addition");
+            System.out.println(" -  → Subtraction");
+            System.out.println(" *  → Multiplication");
+            System.out.println(" /  → Division");
+            System.out.println(" %  → Modulo");
+            System.out.println(" ^  → Power");
+            System.out.println(" sqrt → Square Root");
+            System.out.print("\nEnter your choice: ");
 
-            System.out.print("Enter second number: ");
-            int num2 = in.nextInt();
-
-            System.out.print("Enter an operator (+, -, *, /, %, or type 'exit'): ");
-            operator = in.next();
+            String operator = in.next();
 
             // Exit condition
             if (operator.equalsIgnoreCase("exit")) {
@@ -23,37 +27,65 @@ public class Calculator {
                 break;
             }
 
+            double num1 = 0, num2 = 0;
+
+            // For sqrt, only one number is needed
+            if (operator.equalsIgnoreCase("sqrt")) {
+                System.out.print("Enter a number: ");
+                num1 = in.nextDouble();
+            } else {
+                System.out.print("Enter first number: ");
+                num1 = in.nextDouble();
+                System.out.print("Enter second number: ");
+                num2 = in.nextDouble();
+            }
+
+            double result = 0;
+            boolean valid = true;
+
             switch (operator) {
                 case "+":
-                    System.out.println("Sum: " + (num1 + num2));
+                    result = num1 + num2;
                     break;
                 case "-":
-                    System.out.println("Difference: " + (num1 - num2));
+                    result = num1 - num2;
                     break;
                 case "*":
-                    System.out.println("Product: " + (num1 * num2));
+                    result = num1 * num2;
                     break;
                 case "/":
-                    if (num2 != 0) {
-                        System.out.println("Quotient: " + ((double) num1 / num2));
-                    } else {
+                    if (num2 != 0) result = num1 / num2;
+                    else {
                         System.out.println("Cannot divide by zero.");
+                        valid = false;
                     }
                     break;
                 case "%":
-                    if (num2 != 0) {
-                        System.out.println("Remainder: " + (num1 % num2));
-                    } else {
+                    if (num2 != 0) result = num1 % num2;
+                    else {
                         System.out.println("Cannot divide by zero.");
+                        valid = false;
+                    }
+                    break;
+                case "^":
+                    result = Math.pow(num1, num2);
+                    break;
+                case "sqrt":
+                    if (num1 >= 0) result = Math.sqrt(num1);
+                    else {
+                        System.out.println("Cannot take square root of a negative number.");
+                        valid = false;
                     }
                     break;
                 default:
-                    System.out.println("Invalid operator. Please use +, -, *, /, or %.");
+                    System.out.println("Invalid operation! Try again.");
+                    valid = false;
             }
 
-            System.out.println(); // for spacing
+            if (valid)
+                System.out.println("Result: " + result + "\n");
         }
-
         in.close();
     }
+
 }
