@@ -57,5 +57,3 @@ public class Calculator {
         in.close();
     }
 }
-
-
