@@ -10,22 +10,21 @@ import java.util.Scanner;
         int num2 = in.nextInt();
         System.out.print("Enter an operator (+, -, *, /, %): ");
         String operator=in.next();
-        in.nextLine();
      switch (operator) {
             case "+":
-                System.out.println("Sum: " + (num1 + num2));
+                System.out.println("\nSum: " + (num1 + num2));
                 break;
 
             case "-":
-                System.out.println("Difference: " + (num1 - num2));                
+                System.out.println("\nDifference: " + (num1 - num2));                
                 break;
             case "*":
              
-                System.out.println("Product: " +(num1 * num2));
+                System.out.println("\nProduct: " +(num1 * num2));
                 break;
             case "/":
                 if (num2 != 0) {
-                    System.out.println("Quotient: " + (num1 / num2));
+                    System.out.println("\nQuotient: " + ((double)num1 / num2));
                    
                 } else {
                     System.out.println("Cannot divide by zero.");
@@ -33,7 +32,7 @@ import java.util.Scanner;
                 break;
             case "%":
                 if (num2 != 0) {
-                    System.out.println("Remainder: " + (num1 % num2));
+                    System.out.println("\nRemainder: " + (num1 % num2));
                 } else {
                     System.out.println("Cannot divide by zero.");
                 }
