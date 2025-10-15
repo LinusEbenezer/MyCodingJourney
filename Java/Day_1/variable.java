@@ -1,4 +1,4 @@
-package MyCodingJourney.Java.Day_1;
+
 //variable in Java.
 public class variable {
     public static void main(String[] args) {

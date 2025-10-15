@@ -1,4 +1,4 @@
-package MyCodingJourney.Java.Day_1;
+
 // Personal Info.
 /* Write a Java program that:
 Asks the user for their full name, age, and favorite programming language

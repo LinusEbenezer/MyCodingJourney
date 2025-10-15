@@ -1,4 +1,4 @@
-package MyCodingJourney.Java.Day_1;
+
 // Variable Swapping Without Third Variable
 /* Write a Java program that:
 Declares two variables a and b with any values

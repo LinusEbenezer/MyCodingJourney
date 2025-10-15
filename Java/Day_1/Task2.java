@@ -1,4 +1,4 @@
-package MyCodingJourney.Java.Day_1;
+
 // Basic Arithmetic Operations.
 /*Write a Java program that:
 Takes two integers from the user

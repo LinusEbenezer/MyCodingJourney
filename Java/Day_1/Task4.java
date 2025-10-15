@@ -1,4 +1,4 @@
-package MyCodingJourney.Java.Day_1;
+
 // Task 4: User Input and String Formatting
 import java.util.Scanner;
 public class Task4 {

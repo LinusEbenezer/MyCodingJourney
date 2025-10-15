@@ -1,4 +1,4 @@
-package MyCodingJourney.Java.Day_1;
+
 /* create four variables:
   a byte variable set it to a value of your choice
   a short variable set it to a value of your choice

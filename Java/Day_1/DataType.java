@@ -1,4 +1,4 @@
-package MyCodingJourney.Java.Day_1;
+
 
 public class DataType {
 public static void main(String[] args) {

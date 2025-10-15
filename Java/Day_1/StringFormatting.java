@@ -1,4 +1,4 @@
-package MyCodingJourney.Java.Day_1;
+
 // String Formatting in Java.
 public class StringFormatting {
     public static void main(String[] args) {
